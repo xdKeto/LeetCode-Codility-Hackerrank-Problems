@@ -1,0 +1,8 @@
+select concat(Name, '(', LEFT(OCCUPATION, 1), ')') as name_occupation from occupations
+UNION ALL 
+select concat ('There are a total of ', count(occupation), ' ', lower(occupation), case 
+               when count(occupation) > 1 then 's.'
+               else '.'
+               end
+              ) 
+from Occupations group by occupation order by name_occupation asc
