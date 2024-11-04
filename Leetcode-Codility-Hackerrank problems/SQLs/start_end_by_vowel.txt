@@ -1,1 +1,0 @@
-select distinct city from Station where city like '[AEIOUaeiou]%[AEIOUaeiou]' 

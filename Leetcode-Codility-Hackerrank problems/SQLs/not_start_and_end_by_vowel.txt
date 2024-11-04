@@ -1,1 +1,0 @@
-select distinct city from Station where city not like '[aeiouAEIOU]%' and city not like '%[aeiouAEIOU]'
